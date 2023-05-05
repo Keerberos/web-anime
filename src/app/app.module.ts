@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { OnePieceModule } from './vistas/one-piece/one-piece.module';
+import { WebAnimeModule } from 'src/libs/stencil-generated/web-components/web-anime.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { OnePieceModule } from './vistas/one-piece/one-piece.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    OnePieceModule
+    OnePieceModule,
+    WebAnimeModule,
     
   ],
   providers: [],

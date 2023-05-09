@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IppoComponent } from './ippo.component';
-import { BodyVideoModule } from "./apartado-2/body-video.module";
+import { BodyIppoModule } from "./apartado-2/body-ippo.module";
 
 
 
@@ -15,7 +15,7 @@ import { BodyVideoModule } from "./apartado-2/body-video.module";
     ],
     imports: [
         CommonModule,
-        BodyVideoModule
+        BodyIppoModule
     ]
 })
 export class IppoModule { }

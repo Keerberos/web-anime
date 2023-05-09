@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-body-video',
-  templateUrl: './body-video.component.html',
-  styleUrls: ['./body-video.component.scss']
+  selector: 'app-body-yugioh',
+  templateUrl: './body-yugioh.component.html',
+  styleUrls: ['./body-yugioh.component.scss']
 })
-export class BodyVideoComponent {
+export class BodyYugiohComponent {
 
 }

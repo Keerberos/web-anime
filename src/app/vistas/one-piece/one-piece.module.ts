@@ -1,7 +1,8 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { OnePieceComponent } from './one-piece.component';
-import { BodyVideoModule } from "./apartado-2/body-video.module";
+import { BodyOnePieceModule } from "./apartado-2/body-one-piece.module";
+// import { OnePieceRoutingModule } from './one-piece-routing.module';
 
 
 
@@ -15,7 +16,11 @@ import { BodyVideoModule } from "./apartado-2/body-video.module";
     ],
     imports: [
         CommonModule,
-        BodyVideoModule
-    ]
+        BodyOnePieceModule,
+        // OnePieceRoutingModule,
+    ],
+    schemas: [
+        CUSTOM_ELEMENTS_SCHEMA
+      ],
 })
 export class OnePieceModule { }

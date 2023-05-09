@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BodyVideoComponent } from './body-video.component';
 import { WebAnimeModule } from 'src/libs/stencil-generated/web-anime.module';
+import { BodyIppoComponent } from './body-ippo.component';
 
 
 
 @NgModule({
     declarations: [
-        BodyVideoComponent,
+        BodyIppoComponent,
     ],
     exports: [
-        BodyVideoComponent,
+        BodyIppoComponent,
     ],
     imports: [
         CommonModule,
         WebAnimeModule
     ]
 })
-export class BodyVideoModule { }
+export class BodyIppoModule { }

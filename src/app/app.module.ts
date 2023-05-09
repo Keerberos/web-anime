@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { OnePieceModule } from './vistas/one-piece/one-piece.module';
 import { WebAnimeModule } from 'src/libs/stencil-generated/web-anime.module';
+import { IppoModule } from './vistas/ippo/ippo.module';
+import { HomeModule } from './vistas/home/home.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { WebAnimeModule } from 'src/libs/stencil-generated/web-anime.module';
     BrowserModule,
     AppRoutingModule,
     OnePieceModule,
-    WebAnimeModule
+    WebAnimeModule,
+    IppoModule,
+    HomeModule,
     
   ],
   providers: [],

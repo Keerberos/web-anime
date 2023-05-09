@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { AnimeNav, CapButton } from './proxies';
+import { AnimeNav, CapButton, NavButton } from './proxies';
 import { defineCustomElements } from '@web-anime/loader';
 
 defineCustomElements(window);
@@ -9,10 +9,12 @@ defineCustomElements(window);
     exports: [
         AnimeNav,
         CapButton,
+        NavButton,
     ],
     declarations: [
         AnimeNav,
         CapButton,
+        NavButton,
     ],
 })
 

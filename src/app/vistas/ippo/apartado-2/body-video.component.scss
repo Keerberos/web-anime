@@ -1,0 +1,38 @@
+.apartado2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--skyblue);
+    margin-bottom: 10px;
+  }
+  
+  .capitulosA, .capitulosB {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .imagen-con-boton {
+    position: relative;
+    margin: 10px 8px 10px 0;
+    text-align: center;
+  }
+  
+  .imagen-con-boton img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .imagen-con-boton button {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+  }
+  
+  /* Agregar un margen derecho a todas las imágenes menos a la última */
+  .imagen-con-boton:not(:last-child) {
+    margin-right: 50px;
+  }

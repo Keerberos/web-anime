@@ -1,0 +1,59 @@
+.synopsis {
+  margin: 10px 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: var(--darkgrey);
+  padding: 10px;
+}
+
+.cabecera {
+  display: block;
+  width: auto;
+  height: 200px;
+  margin-right: 20px;
+  float: left;
+}
+
+#titulo {
+  font-size: 36px;
+  font-weight: bold;
+  background-color: var(--lemonchiffon);
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+#sinopsis {
+  overflow: hidden;
+  background-color: var(--lemonchiffon);
+  padding: 0 30px;
+}
+
+#sinopsis p {
+  margin-bottom: 20px;
+}
+
+#sinopsis ul {
+  margin: 0;
+  padding: 0;
+}
+
+#sinopsis li {
+  margin-bottom: 10px;
+}
+
+.clear {
+  clear: both;
+}
+
+footer {
+  background: var(--lemonchiffon);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: relative;
+  display: grid;
+  place-content: center;
+  font-size: large;
+}
+

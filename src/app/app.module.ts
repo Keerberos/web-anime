@@ -7,6 +7,7 @@ import { OnePieceModule } from './vistas/one-piece/one-piece.module';
 import { WebAnimeModule } from 'src/libs/stencil-generated/web-anime.module';
 import { IppoModule } from './vistas/ippo/ippo.module';
 import { HomeModule } from './vistas/home/home.module';
+import { YugiohModule } from './vistas/yugioh/yugioh.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { HomeModule } from './vistas/home/home.module';
     WebAnimeModule,
     IppoModule,
     HomeModule,
-    
+    YugiohModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

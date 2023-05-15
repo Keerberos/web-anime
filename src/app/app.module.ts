@@ -11,12 +11,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { OnePieceComponent } from './vistas/one-piece/one-piece.component';
 import { IppoComponent } from './vistas/ippo/ippo.component';
 import { YugiohComponent } from './vistas/yugioh/yugioh.component';
+import { ChaptersComponent } from './vistas/ippo/chapters/chapters.component';
 
 const appRoutes: Routes=[
   {path: 'home', component: HomeComponent},
   {path: 'one', component: OnePieceComponent},
   {path: 'ippo', component: IppoComponent},
-  {path: 'yugioh', component: YugiohComponent}
+  {path: 'yugioh', component: YugiohComponent},
+  {path: 'chapter', component: ChaptersComponent},
 ]
 
 @NgModule({

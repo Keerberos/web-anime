@@ -1,0 +1,10 @@
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  div > nav-button {
+    display: inline-block;
+    margin: 0 10px;
+  }

@@ -2,20 +2,19 @@
 /* auto-generated angular directive proxies */
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, EventEmitter, NgZone } from '@angular/core';
 
-import { ProxyCmp, proxyOutputs } from './angular-component-lib/utils';
+import { ProxyCmp } from './angular-component-lib/utils';
 
 import { Components } from '@web-anime/src';
 
 
 @ProxyCmp({
-  inputs: ['directorios', 'horarios', 'inicio', 'recientes']
 })
 @Component({
   selector: 'anime-nav',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: '<ng-content></ng-content>',
   // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
-  inputs: ['directorios', 'horarios', 'inicio', 'recientes'],
+  inputs: [],
 })
 export class AnimeNav {
   protected el: HTMLElement;

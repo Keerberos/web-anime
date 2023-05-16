@@ -1,11 +1,15 @@
-<!-- <app-home></app-home>  -->
-<!-- <app-one-piece></app-one-piece> 
-<app-ippo></app-ippo> 
-<app-yugioh></app-yugioh> -->
-<div class="container">
-  <nav-button routerLink="/home"> Inicio</nav-button>
-  <div class="push"></div>
-</div>
+<anime-nav>
+  <div slot="buttons" style="display: flex; flex-direction: row;">
+    <nav-button (click)="redirect('/home')"> Inicio</nav-button>
+    <nav-button (click)="redirect('/home')"> Horarios</nav-button>
+    <nav-button (click)="redirect('/home')"> Directorios</nav-button>
+    <nav-button (click)="redirect('/home')"> Recientes</nav-button>
+    <input-search></input-search>
+    <button class="user">
+      <img src="https://i.imgur.com/7CWnmlR.png"/>
+    </button>
+  </div>
+</anime-nav>
 
 <router-outlet></router-outlet>
 <div class="footer">

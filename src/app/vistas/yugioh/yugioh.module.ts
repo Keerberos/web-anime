@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { YugiohComponent } from './yugioh.component';
-import { BodyYugiohModule } from './apartado-2/body-video.module';
+import { BodyYugiohModule } from './apartado-2/body-yugioh.module';
 
 
 

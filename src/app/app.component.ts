@@ -13,4 +13,18 @@ export class AppComponent {
     console.log('event', event);
     this.router.navigate([`/${event}`]);
   }
+
+  openSideNav() {
+    const sideNav = document.getElementById("nav-crud");
+    if (sideNav) {
+      sideNav.style.width = "250px";
+    }
+  }
+  
+  closeSideNav() {
+    const sideNav = document.getElementById("nav-crud");
+    if (sideNav) {
+      sideNav.style.width = "0";
+    }
+  }
 }

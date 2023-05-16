@@ -1,0 +1,19 @@
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  div > nav-button {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  #titulo {
+    display: inline-block;
+    padding: 2px 4px;
+    margin: 20px auto 0; 
+    font-size: 150%;
+    background-color: var(--lemonchiffon);
+  }
+  

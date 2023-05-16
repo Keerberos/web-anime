@@ -16,16 +16,16 @@ import { Cap8Component } from '../chapters/8/cap8.component';
 import { Cap9Component } from '../chapters/9/cap9.component';
 
 const chaptersRoutes: Routes = [
-  { path: '1', component: Cap1Component },
-  { path: '2', component: Cap2Component },
-  { path: '3', component: Cap3Component },
-  { path: '4', component: Cap4Component },
-  { path: '5', component: Cap5Component },
-  { path: '6', component: Cap6Component },
-  { path: '7', component: Cap7Component },
-  { path: '8', component: Cap8Component },
-  { path: '9', component: Cap9Component },
-  { path: '10', component: Cap10Component },
+  { path: 'one-piece/1', component: Cap1Component },
+  { path: 'one-piece/2', component: Cap2Component },
+  { path: 'one-piece/3', component: Cap3Component },
+  { path: 'one-piece/4', component: Cap4Component },
+  { path: 'one-piece/5', component: Cap5Component },
+  { path: 'one-piece/6', component: Cap6Component },
+  { path: 'one-piece/7', component: Cap7Component },
+  { path: 'one-piece/8', component: Cap8Component },
+  { path: 'one-piece/9', component: Cap9Component },
+  { path: 'one-piece/10', component: Cap10Component },
 
 ];
 

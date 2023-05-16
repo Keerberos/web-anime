@@ -41,7 +41,7 @@ export class Cap1Component {
     let lastSegment = parseInt(urlSegments[urlSegments.length - 1]);
 
     // Verifica si el último segmento es un número válido
-    if (!isNaN(lastSegment)) {
+    if (!isNaN(lastSegment) && lastSegment > 1) {
       // Incrementa el número en 1
       lastSegment -= 1;
 

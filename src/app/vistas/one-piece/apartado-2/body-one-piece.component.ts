@@ -10,6 +10,6 @@ export class BodyOnePieceComponent {
    constructor(private router: Router) {}
   redirect(event: any) {
     console.log('event', event);
-    this.router.navigate([`/${event}`]);
+    this.router.navigate([`one-piece/${event}`]);
   }
 }

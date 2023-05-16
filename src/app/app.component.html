@@ -5,11 +5,17 @@
     <nav-button (click)="redirect('/home')"> Directorios</nav-button>
     <nav-button (click)="redirect('/home')"> Recientes</nav-button>
     <input-search></input-search>
-    <button class="user">
+    <button class="user" (click)="openSideNav()">
       <img src="https://i.imgur.com/7CWnmlR.png"/>
     </button>
   </div>
 </anime-nav>
+
+<div id="nav-crud" class="crud">
+  <a href="javascript:void(0)" class="closebtn" (click)="closeSideNav()">&times;</a>
+  <a href="#">Login</a>
+  <a href="#">Edición de usuarios</a>
+</div>
 
 <router-outlet></router-outlet>
 <div class="footer">

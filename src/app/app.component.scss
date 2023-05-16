@@ -15,3 +15,49 @@
     margin: 5px;
   }
 }
+
+.crud {
+  height: auto; 
+  width: 0; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  right: 0;
+  background-color: var(--dodgerblue);
+  overflow-x: hidden;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  transition: 0.5s; 
+}
+
+.crud a {
+  margin: 20px;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--black);
+  display: block;
+  transition: 0.3s;
+}
+
+.crud a:hover {
+  color: var(--white);
+}
+
+.crud .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .crud {padding-top: 15px;}
+  .crud a {font-size: 18px;}
+}

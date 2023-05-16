@@ -1,10 +1,14 @@
+<div>
+  <div id="titulo">ONE PIECE - 1</div>
+</div>
+
 <div class="video">
     <video controls>
       <source src="../../../../../../assets/videos/one-piece/onupiesz-001.mp4" />
     </video>
     <div>
-      <nav-button id="anterior">Anterior</nav-button>
-      <nav-button id="listado">Lista capítulos</nav-button>
-      <nav-button id="proximo">Siguiente</nav-button>
+      <nav-button (click)="downURL()">Anterior</nav-button>
+      <nav-button (click)="list()">Lista capítulos</nav-button>
+      <nav-button (click)="upURL()">Siguiente</nav-button>
     </div>
   </div>

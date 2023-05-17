@@ -11,12 +11,17 @@ import { RouterModule, Routes } from '@angular/router';
 import { OnePieceComponent } from './vistas/one-piece/one-piece.component';
 import { IppoComponent } from './vistas/ippo/ippo.component';
 import { YugiohComponent } from './vistas/yugioh/yugioh.component';
+import { LoginComponent } from './vistas/login/login.component';
+import { SignUpComponent } from './vistas/sign-up/sign-up.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const appRoutes: Routes=[
   {path: 'home', component: HomeComponent},
   {path: 'one', component: OnePieceComponent},
   {path: 'ippo', component: IppoComponent},
   {path: 'yugioh', component: YugiohComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'sign-up', component: SignUpComponent},
 ]
 
 @NgModule({
@@ -30,7 +35,8 @@ const appRoutes: Routes=[
     IppoModule,
     HomeModule,
     YugiohModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

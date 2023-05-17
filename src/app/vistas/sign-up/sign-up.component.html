@@ -1,0 +1,42 @@
+<form class="form">
+  <p class="title">Se nuestro nakama</p>
+  <p class="message">Registrate ahora y obten acceso completo a nuestra web.</p>
+  <div class="flex">
+    <label>
+      <input required="" placeholder="" type="text" class="input" />
+      <span>Nombre usuario</span>
+    </label>
+  </div>
+
+  <label>
+    <input required="" placeholder="" type="email" class="input" />
+    <span>Correo electrónico</span>
+  </label>
+
+  <label>
+    <input
+      id="password"
+      required=""
+      placeholder=""
+      type="password"
+      class="input"
+    />
+    <span>Contraseña</span>
+  </label>
+  <label>
+    <input
+      id="confirmPassword"
+      (input)="checkPassword()"
+      required=""
+      placeholder=""
+      type="password"
+      class="input"
+    />
+    <span>Confirmar contraseña</span>
+    <span id="passwordError" [hidden]="passwordsMatch" style="color: red"
+      >Las contraseñas no coinciden</span
+    >
+  </label>
+  <button class="submit" (click)="createUser()">Hazte miembro</button>
+  <p class="signin">¿ Ya tienes cuenta ? <a href="/login">Inicia sesión</a></p>
+</form>

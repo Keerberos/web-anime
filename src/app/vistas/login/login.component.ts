@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UserService } from 'src/app/service/user.service';
 
 @Component({
   selector: 'app-login',
@@ -6,13 +7,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent {
-  username!: string;
+  email!: string;
   password!: string;
+  usernameUser!: string;
 
-  constructor() {}
+  constructor(public userService: UserService) {}
 
-  login() {
-    console.log(this.username);
-    console.log(this.password);
+  login(event: Event) {
+    event.preventDefault();
+    this.userService.login(this.email, this.password).subscribe(
+      (data) => {
+        this.userService.emitUsername(data.username);
+        console.log('Inicio de sesión exitoso', data);
+      },
+      (error) => {
+        console.log('Error en el inicio de sesión', error);
+      }
+    );
   }
 }

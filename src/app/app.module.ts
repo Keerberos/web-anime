@@ -14,8 +14,11 @@ import { YugiohComponent } from './vistas/yugioh/yugioh.component';
 import { LoginComponent } from './vistas/login/login.component';
 import { SignUpComponent } from './vistas/sign-up/sign-up.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SignUpModule } from './vistas/sign-up/sign-up.module';
+import { LoginModule } from './vistas/login/login.module';
 
 const appRoutes: Routes=[
+  {path: '', component: HomeComponent},
   {path: 'home', component: HomeComponent},
   {path: 'one', component: OnePieceComponent},
   {path: 'ippo', component: IppoComponent},
@@ -37,6 +40,8 @@ const appRoutes: Routes=[
     YugiohModule,
     RouterModule.forRoot(appRoutes),
     HttpClientModule,
+    SignUpModule,
+    LoginModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,15 +1,27 @@
-<form class="form">
+<form class="form" [formGroup]="user">
   <p class="title">Se nuestro nakama</p>
   <p class="message">Registrate ahora y obten acceso completo a nuestra web.</p>
   <div class="flex">
     <label>
-      <input required="" placeholder="" type="text" class="input" />
+      <input
+        required=""
+        placeholder=""
+        type="text"
+        class="input"
+        formControlName="username"
+      />
       <span>Nombre usuario</span>
     </label>
   </div>
 
   <label>
-    <input required="" placeholder="" type="email" class="input" />
+    <input
+      required=""
+      placeholder=""
+      type="email"
+      class="input"
+      formControlName="email"
+    />
     <span>Correo electrónico</span>
   </label>
 
@@ -20,6 +32,7 @@
       placeholder=""
       type="password"
       class="input"
+      formControlName="password"
     />
     <span>Contraseña</span>
   </label>
@@ -31,12 +44,19 @@
       placeholder=""
       type="password"
       class="input"
+      formControlName="confirmPassword"
     />
     <span>Confirmar contraseña</span>
     <span id="passwordError" [hidden]="passwordsMatch" style="color: red"
       >Las contraseñas no coinciden</span
     >
   </label>
-  <button class="submit" (click)="createUser()">Hazte miembro</button>
+  <button
+    class="submit"
+    (click)="createUser($event)"
+    [disabled]="!user.valid"
+  >
+    Hazte miembro
+  </button>
   <p class="signin">¿ Ya tienes cuenta ? <a href="/login">Inicia sesión</a></p>
 </form>
